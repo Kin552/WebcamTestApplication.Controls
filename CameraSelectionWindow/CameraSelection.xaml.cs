@@ -1,6 +1,8 @@
-﻿using System;
+﻿using DevExpressWebcam.Control.WPF;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -32,7 +34,17 @@ namespace CameraSelectionWindow
 
         private void devExpressWebCam_Click(object sender, RoutedEventArgs e)
         {
+            byte[] fileData = null;
+            fileData = DevExCameraHelper.GetImageByteArrayFromCamera(null);
 
+            if (fileData != null)
+            {
+                DevExpressCam expressCam = new DevExpressCam();
+                var image = DevExCameraHelper.GetImageFromByteArray(fileData);
+
+                expressCam.ImageSource = DevExCameraHelper.GetImageSourceFromImage(image);
+                expressCam.Show();
+            }
         }
     }
 }
