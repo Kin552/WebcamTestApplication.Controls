@@ -1,11 +1,13 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Data.SqlClient;
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using AForge.Video.DirectShow;
 using Microsoft.Win32;
 using WebcamCapturer.Core;
 using Image = System.Drawing.Image;
@@ -27,7 +29,7 @@ namespace WebcamCapturer.Controls.WPF
         {
             InitializeComponent();
             DataContext = this;
-            Loaded += OnLoaded;
+            Loaded += OnLoaded;        
         }
 
         public event EventHandler Connect;
@@ -132,6 +134,7 @@ namespace WebcamCapturer.Controls.WPF
         private void OnBtnDisconnectClick(object sender, RoutedEventArgs e)
         {
             Disconnect?.Invoke(this, EventArgs.Empty);
+            this.Close();
         }
 
         private void OnBtnSaveClick(object sender, RoutedEventArgs e)
@@ -151,7 +154,13 @@ namespace WebcamCapturer.Controls.WPF
 
         private void OnLoaded(object sender, RoutedEventArgs e)
         {
-            Load?.Invoke(this, EventArgs.Empty);
+            Load?.Invoke(this.DataContext, EventArgs.Empty);
+
+            if (this.CbVideoDevices != null && this.CbVideoDevices.Items.Count > 0)
+            {
+                CbVideoDevices.SelectedItem = CbVideoDevices.Items[0]; //default to first webcam on list
+                Connect?.Invoke(this, EventArgs.Empty);
+            }
         }
 
         private void OnCbResolutionsSelectionChanged(object sender, SelectionChangedEventArgs e)

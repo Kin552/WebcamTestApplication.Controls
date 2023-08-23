@@ -104,7 +104,7 @@ namespace DevExpressWebcam.Control.WPF
         {
             try
             {
-                var cameraName = "DevExpress Camera";
+                var cameraName = "KLU - USB Camera";
                 System.Drawing.Size cameraResolution = new System.Drawing.Size(width: 1280, height: 720);
                 CameraControl cameraControl = LayoutTreeHelper.GetVisualChildren(sender as Window).Where(c => c is CameraControl).FirstOrDefault() as CameraControl;
 
@@ -125,7 +125,7 @@ namespace DevExpressWebcam.Control.WPF
             }
             catch (Exception error)
             {
-
+                throw error;
             }
             finally
             {
