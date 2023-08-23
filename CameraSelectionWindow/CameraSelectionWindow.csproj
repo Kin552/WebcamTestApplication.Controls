@@ -37,6 +37,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -93,6 +96,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DevExpressWebcam.Control.WPF\DevExpressWebcam.Control.WPF.csproj">
+      <Project>{AEAB03A1-D64D-40F5-9F48-633C93B84308}</Project>
+      <Name>DevExpressWebcam.Control.WPF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebcamCapturer.Controls.WPF\WebcamCapturer.Controls.WPF.csproj">
+      <Project>{587F1ED7-445B-4367-AC2F-5F783FC8A65D}</Project>
+      <Name>WebcamCapturer.Controls.WPF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebcamCapturer.Core\WebcamCapturer.Core.csproj">
+      <Project>{9F150C85-3145-4E42-8F20-FCAAB4A6B7C3}</Project>
+      <Name>WebcamCapturer.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

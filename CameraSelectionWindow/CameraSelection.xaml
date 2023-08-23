@@ -5,11 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CameraSelectionWindow"
         mc:Ignorable="d"
-        Title="CameraSelection" Height="450" Width="800">
-    <DockPanel x:Name="gridControl">
-        <Canvas DockPanel.Dock="Top" FlowDirection="LeftToRight">
-            <Button Content="WebcamCapturerNuget" Margin="10,10,0,0" Canvas.Left="0" VerticalAlignment="Top" Click="webCamCapture_Click" Height="65" Width="134"/>
-            <Button Content="DevExpressWebCam"  Margin="10,10,0,0" Canvas.Left="160" VerticalAlignment="Top" Click="devExpressWebCam_Click" Height="65" Width="134"/>
-        </Canvas>
-    </DockPanel>
+        Title="CameraSelection" Height="500" Width="800" WindowState="Maximized" >
+    <Border Padding="10" >
+        <DockPanel x:Name="gridControl">
+            <Canvas DockPanel.Dock="Top" FlowDirection="LeftToRight">
+                <Button Content="WebcamCapturerNuget" Margin="10,10,0,0" Canvas.Left="0" VerticalAlignment="Top" Click="webCamCapture_Click" Height="65" Width="134"/>
+                <Button Content="DevExpressWebCam"  Margin="10,10,0,0" Canvas.Left="160" VerticalAlignment="Top" Click="devExpressWebCam_Click" Height="65" Width="134"/>
+            </Canvas>
+        </DockPanel>
+    </Border>
 </Window>

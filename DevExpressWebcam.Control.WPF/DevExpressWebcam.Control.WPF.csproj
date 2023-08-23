@@ -160,21 +160,12 @@
       <DependentUpon>DevExpressCam.xaml</DependentUpon>
     </Compile>
     <Compile Include="SequentialGuid.cs" />
-    <Compile Include="VisualAidItemBase.cs" />
     <Page Include="DevExpressCam.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ImageVisualAidItem.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ImageVisualAidItem.xaml.cs">
-      <DependentUpon>ImageVisualAidItem.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

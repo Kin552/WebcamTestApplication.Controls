@@ -47,6 +47,9 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -67,9 +70,16 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="WebcamCaptureTest.xaml.cs">
+      <DependentUpon>WebcamCaptureTest.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WebcamCaptureWindow.xaml.cs">
       <DependentUpon>WebcamCaptureWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="WebcamCaptureTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WebcamCaptureWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
