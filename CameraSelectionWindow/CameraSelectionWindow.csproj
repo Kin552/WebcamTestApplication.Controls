@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2CA02325-E740-4033-A328-4CDBDE4F23F9}</ProjectGuid>
+    <ProjectGuid>{F8173715-F3BB-43DB-9CAD-2632C8B8D118}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>CamereaSelectionWindow</RootNamespace>
-    <AssemblyName>CamereaSelectionWindow</AssemblyName>
+    <RootNamespace>CameraSelectionWindow</RootNamespace>
+    <AssemblyName>CameraSelectionWindow</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,7 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Page Include="CameraSelection.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -63,8 +63,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="CameraSelection.xaml.cs">
+      <DependentUpon>CameraSelection.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

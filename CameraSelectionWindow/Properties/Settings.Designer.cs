@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CamereaSelectionWindow.Properties
+namespace CameraSelectionWindow.Properties
 {
 
 

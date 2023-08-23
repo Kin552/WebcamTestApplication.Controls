@@ -13,16 +13,26 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CamereaSelectionWindow
+namespace CameraSelectionWindow
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CameraSelection : Window
     {
-        public MainWindow()
+        public CameraSelection()
         {
             InitializeComponent();
+        }
+
+        private void webCamCapture_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void devExpressWebCam_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

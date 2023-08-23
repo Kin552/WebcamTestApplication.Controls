@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamereaSelectionWindow", "CamereaSelectionWindow\CamereaSelectionWindow.csproj", "{2CA02325-E740-4033-A328-4CDBDE4F23F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraSelectionWindow", "CameraSelectionWindow\CameraSelectionWindow.csproj", "{F8173715-F3BB-43DB-9CAD-2632C8B8D118}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2CA02325-E740-4033-A328-4CDBDE4F23F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2CA02325-E740-4033-A328-4CDBDE4F23F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2CA02325-E740-4033-A328-4CDBDE4F23F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2CA02325-E740-4033-A328-4CDBDE4F23F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8173715-F3BB-43DB-9CAD-2632C8B8D118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8173715-F3BB-43DB-9CAD-2632C8B8D118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8173715-F3BB-43DB-9CAD-2632C8B8D118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8173715-F3BB-43DB-9CAD-2632C8B8D118}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
