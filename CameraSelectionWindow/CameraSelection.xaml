@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CameraSelectionWindow"
         mc:Ignorable="d"
-        Title="CameraSelection" Height="500" Width="800" WindowState="Maximized" >
+        Title="CameraSelection" Height="800" Width="800" WindowState="Normal" >
     <Border Padding="10" >
         <DockPanel x:Name="gridControl">
             <Canvas DockPanel.Dock="Top" FlowDirection="LeftToRight">

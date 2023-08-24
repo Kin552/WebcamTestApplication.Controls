@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WebcamCapturer.Controls.WPF"
         mc:Ignorable="d"
-        Title="WebcamCaptureWindow" WindowState="Maximized"  >
+        Title="WebcamCaptureWindow" WindowState="Maximized" Width="800" Height="800" >
     <DockPanel Margin="10" x:Name="dockPanel">
         <Canvas DockPanel.Dock="Bottom" Height="200" FlowDirection="RightToLeft" >
             <Button Content="Connect" Width="145" 

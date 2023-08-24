@@ -31,19 +31,9 @@ namespace CameraSelectionWindow
 
         private void webCamCapture_Click(object sender, RoutedEventArgs e)
         {
-            //WebcamCaptureTest webcamCaptureWindow = new WebcamCaptureTest();
-            ////webcamCaptureWindow.GetAllConnectedCameras();
-            //webcamCaptureWindow.Show();
-
             WebcamCaptureWindow captureWindow = new WebcamCaptureWindow();
             var presenter = new WebcamCapturePresenter(captureWindow);
-
             captureWindow.Show();
-
-            var view = new WebcamCaptureWindow();
-            var presenter1 = new WebcamCapturePresenter(view);
-            //presenter1.Show();
-
         }
         private void devExpressWebCam_Click(object sender, RoutedEventArgs e)
         {
